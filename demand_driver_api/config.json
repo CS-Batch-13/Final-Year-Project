@@ -1,0 +1,732 @@
+{
+    "PORT": 10000,
+    "HTTPS_PROXY": "https://188.68.95.166:41258",
+    "WEBSOL_API_KEY": "2d8b3b803594b13e02a7dc827f4a63f8",
+    "WEBSOL_FIELDS": "settlement,previousClose,previousOpenInterest",
+    "NEWS_API_KEY": "69d38d34164040b9a2dbcea49b57d420",
+    "CONSUMER_KEY": "YHF7RMi5tbptR48PdI4o1LSgF",
+    "CONSUMER_SECRET": "L96FftoZYt6myWjuBKg6XThGe2mtHWfKFs73pMiVurzbEt1EUS",
+    "ACCESS_TOKEN": "2852578340-gIkkRqfOLSbm0e4rhbqZP9IZPbFhiZVJza6sEMI",
+    "ACCESS_TOKEN_SECRET": "RRPmryinxuZbc99gonANA5KMAHAK47aAaG2fF6QtkWbd8",
+    "CONTIFY_APPID": "a29bf126",
+    "CONTIFY_APPSECRET": "11f521ca863b4e4833ddfa6f3805fe23",
+    "AZURE_KEY1": "c3598503c40646f89a99b58d60f21c40",
+    "AZURE_KEY2": "e783947b12b34abc93d018780966e0d6",
+    "QUANDL_API_KEY": "pBciLVeM2am_48HDLzrf",
+    "EVENT_REG_API_KEY": "8823e92b-e500-4d06-91c3-8bf3ddff7f1f",
+    "EXPORTS": [
+        {
+            "year": 2017,
+            "url": "https://data.gov.in/node/5849341/datastore/export/json"
+        },
+        {
+            "year": 2016,
+            "url": "https://data.gov.in/node/2899301/datastore/export/json"
+        },
+        {
+            "year": 2015,
+            "url": "https://data.gov.in/node/2899281/datastore/export/json"
+        },
+        {
+            "year": 2014,
+            "url": "https://data.gov.in/node/2899261/datastore/export/json"
+        }
+    ],
+    "IMPORTS": [
+        {
+            "year": 2017,
+            "url": "https://data.gov.in/node/5849381/datastore/export/json"
+        },
+        {
+            "year": 2016,
+            "url": "https://data.gov.in/node/2899241/datastore/export/json"
+        },
+        {
+            "year": 2015,
+            "url": "https://data.gov.in/node/2899221/datastore/export/json"
+        },
+        {
+            "year": 2014,
+            "url": "https://data.gov.in/node/2899201/datastore/export/json"
+        }
+    ],
+    "SOURCES": [
+        "msnbc",
+        "cnn",
+        "the-wall-street-journal",
+        "google-news",
+        "bloomberg",
+        "cnbc",
+        "business-insider",
+        "financial-post"
+    ],
+    "COMMODITIES": {
+        "Grains": [
+            "Wheat",
+            "Rice",
+            "Barley",
+            "Corn",
+            "Cotton",
+            "Flaxseed"
+        ],
+        "Meat": [
+            "Beef",
+            "Pork"
+        ],
+        "Energy": [
+            "Gas",
+            "Oil",
+            "Propane"
+        ],
+        "Metals": [
+            "Copper",
+            "Gold",
+            "Palladium",
+            "Platinum",
+            "Silver"
+        ],
+        "Miscellaneous": [
+            "Cocoa",
+            "Coffee",
+            "Lumber",
+            "Milk",
+            "Sugar"
+        ]
+    },
+    "PARAMETERS": [
+        "agriculture",
+        "energy",
+        "infrastructure",
+        "transport",
+        "urban development",
+        "real estate",
+        "automotive"
+    ],
+    "PARAMETERS_HASHTAGS": {
+        "agriculture": [
+            {
+                "display": "govt_policy",
+                "title": "government policy agriculture",
+                "url": ""
+            },
+            {
+                "display": "organic",
+                "title": "organic agriculture",
+                "url": ""
+            },
+            {
+                "display": "farming",
+                "title": "farming agriculture",
+                "url": ""
+            },
+            {
+                "display": "weather",
+                "title": "weather agriculture",
+                "url": ""
+            }
+        ],
+        "automotive": [
+            {
+                "display": "govt_policy",
+                "title": "government policy automotive",
+                "url": ""
+            },
+            {
+                "display": "tenders",
+                "title": "tenders automotive",
+                "url": ""
+            },
+            {
+                "display": "conventional",
+                "title": "conventional automotive",
+                "url": ""
+            },
+            {
+                "display": "electric",
+                "title": "electric automotive",
+                "url": ""
+            }
+        ],
+        "production": [
+            {
+                "display": "CPI",
+                "title": "consumer price index",
+                "url": ""
+            },
+            {
+                "display": "storage",
+                "title": "Storage",
+                "url": ""
+            },
+            {
+                "display": "manpower",
+                "title": "manpower",
+                "url": ""
+            }
+        ],
+        "transport": [
+            {
+                "display": "govt_policy",
+                "title": "government policy transport",
+                "url": ""
+            },
+            {
+                "display": "tenders",
+                "title": "tenders transport",
+                "url": ""
+            },
+            {
+                "display": "Noise pollution",
+                "title": "Noise pollution transport",
+                "url": ""
+            }
+        ],
+        "urban_development": [
+            {
+                "display": "govt_policy",
+                "title": "government policy urban development",
+                "url": ""
+            },
+            {
+                "display": "tenders",
+                "title": "tenders urban development",
+                "url": ""
+            }
+        ],
+        "infrastructure": [
+            {
+                "display": "govt_policy",
+                "title": "government policy infrastructure",
+                "url": ""
+            },
+            {
+                "display": "tenders",
+                "title": "tenders infrastructure",
+                "url": ""
+            },
+            {
+                "display": "roads&bridges",
+                "title": "roads bridges infrastructure",
+                "url": ""
+            },
+            {
+                "display": "railways",
+                "title": "railways infrastructure",
+                "url": ""
+            },
+            {
+                "display": "metro",
+                "title": "metro infrastructure",
+                "url": ""
+            },
+            {
+                "display": "airports",
+                "title": "airports infrastructure",
+                "url": ""
+            },
+            {
+                "display": "ports",
+                "title": "ports infrastructure",
+                "url": ""
+            }
+        ],
+        "real_estate": [
+            {
+                "display": "govt_policy",
+                "title": "government policy real estate",
+                "url": ""
+            },
+            {
+                "display": "tenders",
+                "title": "tenders real estate",
+                "url": ""
+            }
+        ],
+        "energy": [
+            {
+                "display": "govt_policy",
+                "title": "government policy energy",
+                "url": ""
+            },
+            {
+                "display": "tenders",
+                "title": "tenders energy",
+                "url": ""
+            },
+            {
+                "display": "solar",
+                "title": "solar energy",
+                "url": ""
+            },
+            {
+                "display": "wind",
+                "title": "wind energy",
+                "url": ""
+            },
+            {
+                "display": "biomass",
+                "title": "biomass energy",
+                "url": ""
+            },
+            {
+                "display": "thermal",
+                "title": "thermal energy",
+                "url": ""
+            },
+            {
+                "display": "nuclear",
+                "title": "nuclear energy",
+                "url": ""
+            },
+            {
+                "display": "hydro",
+                "title": "hydro energy",
+                "url": ""
+            }
+        ],
+        "demand": [
+            {
+                "display": "price",
+                "title": "manufacturing price",
+                "url": ""
+            },
+            {
+                "display": "prefs",
+                "title": "preferences",
+                "url": ""
+            },
+            {
+                "display": "income",
+                "title": "income",
+                "url": ""
+            },
+            {
+                "display": "expectation",
+                "title": "expectation",
+                "url": ""
+            },
+            {
+                "display": "population",
+                "title": "population",
+                "url": ""
+            }
+        ],
+        "economy": [
+            {
+                "display": "govt_policy",
+                "title": "government policy",
+                "url": ""
+            },
+            {
+                "display": "jobs",
+                "title": "job report",
+                "url": ""
+            },
+            {
+                "display": "CPI",
+                "title": "consumer price index",
+                "url": ""
+            },
+            {
+                "display": "demo",
+                "title": "demonetization",
+                "url": ""
+            }
+        ],
+        "wheat": [
+            {
+                "display": "harvest",
+                "title": "wheat harvest",
+                "url": ""
+            },
+            {
+                "display": "rain",
+                "title": "wheat rainfall",
+                "url": ""
+            },
+            {
+                "display": "soil",
+                "title": "wheat soil"
+            }
+        ],
+        "rice": [
+            {
+                "display": "sunshine",
+                "title": "rice sunshine",
+                "url": ""
+            },
+            {
+                "display": "seed",
+                "title": "rice seed rate",
+                "url": ""
+            }
+        ],
+        "barley": [
+            {
+                "display": "drought",
+                "title": "barley drought",
+                "url": ""
+            },
+            {
+                "display": "rabi",
+                "title": "barley rabi",
+                "url": ""
+            },
+            {
+                "display": "rainfall",
+                "title": "barley rainfall",
+                "url": ""
+            },
+            {
+                "display": "fetility",
+                "title": "barley soil fertility",
+                "url": ""
+            }
+        ],
+        "corn": [
+            {
+                "display": "bushels",
+                "title": "corn bushels",
+                "url": ""
+            },
+            {
+                "display": "rainfall",
+                "title": "corn rainfall",
+                "url": ""
+            }
+        ],
+        "beef": [
+            {
+                "display": "cows",
+                "title": "beef cows",
+                "url": ""
+            },
+            {
+                "display": "steak",
+                "title": "beef steak",
+                "url": ""
+            },
+            {
+                "display": "muscle",
+                "title": "beef muscle",
+                "url": ""
+            }
+        ],
+        "pork": [
+            {
+                "display": "pigs",
+                "title": "pork pigs",
+                "url": ""
+            },
+            {
+                "display": "ham",
+                "title": "pork ham",
+                "url": ""
+            },
+            {
+                "display": "bacon",
+                "title": "pork bacon",
+                "url": ""
+            }
+        ],
+        "flaxseed": [
+            {
+                "display": "fibre",
+                "title": "flaxseed fibre",
+                "url": ""
+            },
+            {
+                "display": "sunshine",
+                "title": "flaxseed sunshine",
+                "url": ""
+            },
+            {
+                "display": "seedrate",
+                "title": "flaxseed seed rate",
+                "url": ""
+            }
+        ],
+        "cotton": [
+            {
+                "display": "china_stock",
+                "title": "Chinese stock cotton",
+                "url": ""
+            },
+            {
+                "display": "usd",
+                "title": "cotton dollar",
+                "url": ""
+            },
+            {
+                "display": "seasonal",
+                "title": "cotton seasonal factors",
+                "url": ""
+            }
+        ],
+        "gas": [
+            {
+                "display": "power_demand",
+                "title": "electric power demand gas",
+                "url": ""
+            },
+            {
+                "display": "winter_commercial_demand",
+                "title": "winter commercial demand gas",
+                "url": ""
+            },
+            {
+                "display": "crude_oil",
+                "title": "crude oil fluctuation gas",
+                "url": ""
+            }
+        ],
+        "oil": [
+            {
+                "display": "cost",
+                "title": "crude oil cost",
+                "url": ""
+            },
+            {
+                "display": "govt_policy",
+                "title": "crude oil government",
+                "url": ""
+            },
+            {
+                "display": "euorpe_union",
+                "title": "europe union oil",
+                "url": ""
+            },
+            {
+                "display": "arab",
+                "title": "arab oil",
+                "url": ""
+            }
+        ],
+        "propane": [
+            {
+                "display": "crude_oil",
+                "title": "crude oil fluctuation propane",
+                "url": ""
+            },
+            {
+                "display": "weather",
+                "title": "crude oil fluctuation weather",
+                "url": ""
+            },
+            {
+                "display": "export",
+                "title": "export propane",
+                "url": ""
+            },
+            {
+                "display": "import",
+                "title": "import propane",
+                "url": ""
+            }
+        ],
+        "copper": [
+            {
+                "display": "china_demand",
+                "title": "demand china copper",
+                "url": ""
+            },
+            {
+                "display": "SRB",
+                "title": "strategic reserves bureau copper",
+                "url": ""
+            },
+            {
+                "display": "demand_usa",
+                "title": "demand america copper",
+                "url": ""
+            },
+            {
+                "display": "new volcanogenic",
+                "title": "new volcanogenic Copper",
+                "url": ""
+            },
+            {
+                "display": "local suppliers",
+                "title": "local suppliers Copper",
+                "url": ""
+            },
+            {
+                "display": "excavators onsite",
+                "title": "excavators onsite Copper",
+                "url": ""
+            }
+        ],
+        "gold": [
+            {
+                "display": "inflation",
+                "title": "inflation gold",
+                "url": ""
+            },
+            {
+                "display": "usd",
+                "title": "america dollar gold",
+                "url": ""
+            },
+            {
+                "display": "ETF",
+                "title": "electronic traded funds gold",
+                "url": ""
+            }
+        ],
+        "palladium": [
+            {
+                "display": "auto_industry",
+                "title": "auto industry palladium",
+                "url": ""
+            },
+            {
+                "display": "jewellery",
+                "title": "jewellery palladium",
+                "url": ""
+            },
+            {
+                "display": "electronics",
+                "title": "electronics palladium",
+                "url": ""
+            }
+        ],
+        "silver": [
+            {
+                "display": "scrap_cost",
+                "title": "scrap cost silver",
+                "url": ""
+            },
+            {
+                "display": "USD",
+                "title": "strength dollar silver",
+                "url": ""
+            },
+            {
+                "display": "gold_price",
+                "title": "gold fluctuation silver",
+                "url": ""
+            },
+            {
+                "display": "govt_policy",
+                "title": "government policy silver",
+                "url": ""
+            }
+        ]
+    },
+    "MARKET_QUOTES": {
+        "FOOD": [
+            {
+                "title": "Cocoa",
+                "code": "CC"
+            },
+            {
+                "title": "Coffee",
+                "code": "KC"
+            },
+            {
+                "title": "Orange Juice",
+                "code": "OJ"
+            },
+            {
+                "title": "Sugar",
+                "code": "SB"
+            }
+        ],
+        "FIBER": [
+            {
+                "title": "Cotton",
+                "code": "CT"
+            },
+            {
+                "title": "Lumber",
+                "code": "LS"
+            }
+        ],
+        "GRAINS": [
+            {
+                "title": "Corn",
+                "code": "ZC"
+            },
+            {
+                "title": "Oats",
+                "code": "ZO"
+            },
+            {
+                "title": "Rice",
+                "code": "ZR"
+            },
+            {
+                "title": "Wheat",
+                "code": "ZW"
+            }
+        ],
+        "OILSEED": [
+            {
+                "title": "Soyabeans",
+                "code": "ZS"
+            },
+            {
+                "title": "Soyabean Meal",
+                "code": "ZM"
+            },
+            {
+                "title": "Soyabean Oil",
+                "code": "ZL"
+            }
+        ],
+        "CATTLE": [
+            {
+                "title": "Feeder Cattle",
+                "code": "GF"
+            },
+            {
+                "title": "Live Cattle",
+                "code": "LE"
+            },
+            {
+                "title": "Lean Hogs",
+                "code": "HE"
+            }
+        ],
+        "METALS": [
+            {
+                "title": "Copper",
+                "code": "HG"
+            },
+            {
+                "title": "Gold",
+                "code": "GC"
+            },
+            {
+                "title": "Palladium",
+                "code": "PA"
+            },
+            {
+                "title": "Platinum",
+                "code": "PL"
+            },
+            {
+                "title": "Silver",
+                "code": "Sl"
+            }
+        ],
+        "ENERGY": [
+            {
+                "title": "Crude Oil",
+                "code": "CL"
+            },
+            {
+                "title": "Heating Oil",
+                "code": "HO"
+            },
+            {
+                "title": "Natural Gas",
+                "code": "NG"
+            },
+            {
+                "title": "RBOB Gasoline",
+                "code": "RB"
+            }
+        ]
+    }
+}
