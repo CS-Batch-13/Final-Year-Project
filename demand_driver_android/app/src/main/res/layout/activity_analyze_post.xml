@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AnalyzePostActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.card.MaterialCardView
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/analyzePostTitleTextView"
+                        android:fontFamily="@font/helvetica_bold"
+                        tools:text="Post Title"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="20sp"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/analyzePostAffectedCommoditiesRecyclerView"
+                            android:scrollbars="none"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+                        <TextView
+                            android:id="@+id/analyzePostSummaryTextView"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:textSize="14sp"
+                            tools:text="Post Summary"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/colorTextDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <View
+                        android:background="#f5f5f5"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/analyzePostSourceNameTextView"
+                            android:textColor="@color/colorAccent"
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textSize="16sp"
+                            tools:text="SOURCE"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/analyzePostVisitWebsiteImageView"
+                            android:layout_marginEnd="16dp"
+                            android:tint="@color/colorTextDark"
+                            tools:src="@drawable/internet"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp" />
+                        <ImageView
+                            android:id="@+id/analyzePostShareImageView"
+                            android:tint="@color/colorTextDark"
+                            android:src="@drawable/ic_menu_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="12dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="@font/helvetica_bold"
+                        android:textColor="@color/colorTextDark"
+                        android:text="Overall Priority Score"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/analyzePostFinalScoreTextView"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="64sp"
+                        android:textColor="@color/colorAccent"
+                        android:text="Computing.."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="12dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textColor="@color/colorTextDark"
+                            android:text="Original Post"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/analyzePostDescriptionDropDownImageView"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/analyzePostDescriptionTextView"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorTextDark"
+                        tools:text="Post Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+
+
+            <android.support.design.card.MaterialCardView
+                android:id="@+id/analyzePostInvestmentCardView"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:contentPadding="12dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textColor="@color/colorTextDark"
+                            android:text="Government Initiatives and Road Ahead"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/analyzePostGovernmentInvestmentScoreTextView"
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textSize="32sp"
+                            tools:text="10"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@color/colorGreen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/analyzePostInvestmentTextView"
+                        tools:text="Bleh Bleh"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/colorTextDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ProgressBar
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/analyzePostGovernmentInvestmentProgressBar"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:contentPadding="12dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textColor="@color/colorTextDark"
+                            android:text="Related News"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/analyzePostGovernmentPolicyScoreTextView"
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textSize="32sp"
+                            tools:text="10"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@color/colorGreen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/analyzePostRelatedGovernmentPoliciesRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+                    <ProgressBar
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/analyzePostGovernmentPoliciesProgressBar"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="12dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textColor="@color/colorTextDark"
+                            android:text="Deduced Parameters"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/analyzePostDeducedParametersScoreTextView"
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textSize="32sp"
+                            tools:text="10"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@color/colorGreen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <android.support.design.chip.ChipGroup
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/analyzePostDeducedParametersChipGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.design.chip.ChipGroup>
+                    <ProgressBar
+                        android:id="@+id/analyzePostDeducedParametersProgressBar"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+
+            <android.support.design.card.MaterialCardView
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="8dp"
+                app:contentPadding="12dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textColor="@color/colorTextDark"
+                            android:text="Sentiment Analysis"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/analyzePostSentimentAnalysisScoreTextView"
+                            android:fontFamily="@font/helvetica_bold"
+                            android:textSize="32sp"
+                            tools:text="10"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@color/colorGreen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/analyzePostSentimentAnalysisPolarityPieChart"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/analyzePostSentimentAnalysisSubjectivityPieChart"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+                    <ProgressBar
+                        android:id="@+id/analyzePostSentimentAnalysisProgressBar"
+                        android:visibility="gone"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </android.support.design.card.MaterialCardView>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/analyzePostVerticalsFAB"
+            android:src="@drawable/dollar"
+            android:tint="@android:color/white"
+            app:fabSize="normal"
+            app:fabCustomSize="96dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="16dp"
+            app:elevation="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</ScrollView>

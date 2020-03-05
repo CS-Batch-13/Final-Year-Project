@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tweetListItemImageView"
+            android:layout_width="64dp"
+            android:layout_height="64dp" />
+        <LinearLayout
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tweetListItemUserNameTextView"
+                android:fontFamily="@font/helvetica_bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                tools:text="Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tweetListItemFollowersCount"
+                android:textColor="@color/colorTextDark"
+                android:fontFamily="@font/helvetica_bold"
+                android:textSize="14sp"
+                tools:text="2356 followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tweetListItemPostCreatedTextView"
+                android:textSize="14sp"
+                tools:text="Wed Jan 09 21:08:57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/tweetListItemTwitterLogoImageView"
+            tools:src="@drawable/twitter_logo"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tweetListItemTweetContentTextView"
+        android:textColor="@color/colorTextDark"
+        android:textSize="16sp"
+        tools:text="Post description"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/tweetListItemReTweetImageView"
+            android:tint="@color/colorAccent"
+            tools:src="@drawable/retweet_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:id="@+id/tweetListItemReTweetCount"
+            android:fontFamily="@font/helvetica_bold"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp"
+            android:layout_marginStart="4dp"
+            tools:text="100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Market Intelligence">
+        <menu>
+            <item
+                android:id="@+id/mainNavigationItemImpact"
+                android:icon="@drawable/ic_trending_up_black_24dp"
+                android:title="Impact Analysis" />
+            <item
+                android:id="@+id/mainNavigationItemCommodityTracking"
+                android:icon="@drawable/report"
+                android:title="Commodity Tracking" />
+            <item
+                android:id="@+id/mainNavigationItemCompanies"
+                android:icon="@drawable/factory"
+                android:title="Company Insights" />
+            <item
+                android:id="@+id/mainNavigationItemFuturesForecast"
+                android:icon="@drawable/rainbow"
+                android:title="Futures Forecast" />
+        </menu>
+    </item>
+
+</menu>

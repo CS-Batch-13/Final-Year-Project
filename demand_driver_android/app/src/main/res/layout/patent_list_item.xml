@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/patentListItemTitleTextView"
+        android:fontFamily="@font/helvetica_bold"
+        android:textColor="@color/colorTextDark"
+        tools:text="Ribbon feeding apparatus, and tape printing apparatus equipped with the same"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/patentListItemInventorsTextView"
+        android:textSize="16sp"
+        tools:text="Taishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/patentListItemCountryTextView"
+            android:fontFamily="@font/helvetica_bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            tools:text="United States of America"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/patentListItemDateTextView"
+            android:fontFamily="@font/helvetica_bold"
+            android:textColor="@color/colorTextDark"
+            android:textSize="14sp"
+            tools:text="2018-06-19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/patentListItemDropDownImageView"
+            android:tint="@color/colorTextDark"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/patentListItemAbstractTextView"
+        tools:text="An apparatus includes: a delivering-side gear train that transmits motive power to a delivering-side drive shaft; an winding-side gear train that transmits motive power to an winding-side drive shaft; a second clutch mechanism that connects the drive motor and the delivering-side gear train to each other in accordance with reverse rotation of the drive motor and disconnects the drive motor and the delivering-side gear train from each other in accordance with forward rotation of the drive motor; and a first clutch mechanism that is provided upstream of the second clutch mechanism, connects the drive motor and the winding-side gear train to each other in accordance with the forward rotation of the drive motor, and disconnects the drive motor and the winding-side gear train from each other in accordance with the reverse rotation of the drive motor"
+        android:textColor="@color/colorTextDark"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

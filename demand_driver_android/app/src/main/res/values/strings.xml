@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY domain "192.168.43.12">]>
+<resources>
+    <string name="app_name">Radar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="base_server_url">http://&domain;:10000/api</string>
+    <string name="base_websocket_url">http://&domain;:10000</string>
+    <string name="contify_appid">a29bf126</string>
+    <string name="contify_appsecret">11f521ca863b4e4833ddfa6f3805fe23</string>
+    <string name="mcx_live_price">http://88.99.61.159:4000/getdata?admin=root&amp;password=root</string>
+    <string name="https_proxy">https://188.68.95.166:41258</string>
+    <string name="google_trends_api">http://&domain;:20000</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="commodities">
+        <item>Agriculture</item>
+        <item>Energy</item>
+        <item>Metals</item>
+        <item>Livestock</item>
+    </array>
+
+    <array name="commodities_list">
+        <item>Metals</item>
+        <item>Grains</item>
+        <item>Energy</item>
+        <item>Meat</item>
+    </array>
+
+    <array name="futures_categories">
+        <item>CATTLE</item>
+        <item>ENERGY</item>
+        <item>FIBER</item>
+        <item>FOOD</item>
+        <item>GRAINS</item>
+        <item>METALS</item>
+        <item>OILSEED</item>
+    </array>
+
+    <array name="verticals">
+        <item>Policies</item>
+        <item>Project Announcement</item>
+        <item>Investment</item>
+        <item>New Project</item>
+        <item>Targets</item>
+        <item>Project delay</item>
+        <item>Project update</item>
+        <item>Logistics</item>
+    </array>
+</resources>

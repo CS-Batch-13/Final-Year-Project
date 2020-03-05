@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorGridBackground</color>
+    <color name="colorPrimaryDark">@color/colorGridBackground</color>
+    <color name="colorAccent">@color/colorDanger</color>
+    <color name="colorDanger">#f44336</color>
+    <color name="colorTextDark">#424242</color>
+    <color name="colorTextLight">#bdbdbd</color>
+    <color name="colorGridBackground">#fafafa</color>
+    <color name="colorGreen">#8bc34a</color>
+</resources>
